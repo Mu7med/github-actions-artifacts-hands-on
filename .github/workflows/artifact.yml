@@ -31,4 +31,6 @@ jobs:
         path: ./artifact/hello.txt
 
     - name: Display content of the text file
-      run: cat ./artifacts/hello.txt 
+      run: |
+        mkdir -p ./artifact/
+        cat ./artifacts/hello.txt 
